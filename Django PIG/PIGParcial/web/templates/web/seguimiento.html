@@ -1,0 +1,10 @@
+{% extends "web/base.html" %}
+{% block titulo %}Seguimiento de Orden{% endblock %}
+{% block main %}
+    <h2>Seguimiento de Orden</h2>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Consultar</button>
+    </form>
+{% endblock %}

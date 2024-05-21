@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-image: url('../img/fondo1.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+nav{
+    display: flex;
+    justify-content: right;
+    align-items: flex-end;
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    margin-right: 10vh;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 50px;
+}
+
+nav ul li:last-child {
+    margin-right: 0; 
+}
+
+h1, a{
+    color: white;
+}
+
+h1{
+    padding: 10px;
+}
+
+a{
+    text-decoration: none;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+a:hover{
+    background-color: rgba(0, 0, 0, 0.356);
+}
+
+.centered{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header, main, footer{
+    padding: 15px;
+}
+
+header{
+    background-color: rgba(63, 63, 63, 0.90);
+    display: inline-block;
+    width: 100%;
+    position: fixed;
+}
+
+header .messages{
+    position: fixed;
+    list-style: None;
+    font-weight: bold;
+    top: 15px;
+    right: 15px;
+}
+
+header .messages .success{
+    background-color: rgb(116, 196, 101);
+    color: white;
+    padding: 15px;
+    border-radius: 20px;
+    border-top-right-radius: 5px;
+}
+
+main{
+    flex: 1;
+    flex-direction: column;
+    margin-top: 15vh;
+}
+
+footer{
+    background-color: rgb(71, 71, 71); /*rgb(71, 71, 71)*/
+    color: white;
+}

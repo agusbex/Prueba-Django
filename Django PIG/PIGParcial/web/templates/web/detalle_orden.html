@@ -1,0 +1,10 @@
+{% extends "web/base.html" %}
+{% block titulo %}Detalle de la Orden{% endblock %}
+{% block main %}
+    <h2>Detalle de la Orden</h2>
+    <p>Número de Orden: {{ orden.numero_orden }}</p>
+    <p>DNI: {{ orden.dni }}</p>
+    <p>Estado: {{ orden.estado }}</p>
+    <p>Descripción: {{ orden.descripcion }}</p>
+    <p>Fecha de Ingreso: {{ orden.fecha_ingreso }}</p>
+{% endblock %}

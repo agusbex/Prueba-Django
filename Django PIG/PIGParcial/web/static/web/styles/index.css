@@ -1,0 +1,15 @@
+/* h2{
+    background-color: blueviolet;
+    padding: 25px;
+    color: white;
+    border-radius: 5px;
+    border-top-right-radius: 20px;
+} */
+
+#contenedor{
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    width: 80%;
+    padding: 30px;
+    letter-spacing: 2px;
+}

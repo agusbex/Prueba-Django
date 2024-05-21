@@ -1,0 +1,65 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block titulo %}{% endblock %}</title>
+
+    <link rel="stylesheet" href="{% static 'web/styles/base.css' %}">
+
+    {% block extra_css %}{% endblock %}
+
+</head>
+<body>
+    <header>
+        <h1>Gestor de Órdenes de Reparación</h1>
+        <nav>
+            <ul>
+                <li><a href="{% url 'index' %}">Index</a></li>
+                <li><a href="{% url 'seguimiento' %}">Seguimiento de Orden</a></li>
+                <li><a href="{% url 'contacto' %}">Contacto</a></li>
+                <li><a href="{% url 'admin_login' %}">Administración</a></li>
+            </ul>
+        </nav>
+
+        {% if messages %}
+            <ul class="messages">
+                {% for message in messages %}
+                    <li {% if message.tags %} class="{{message.tags}}" {% endif %}>{{message}}</li>
+                {% endfor %}
+            </ul>
+        {% endif %}
+
+    </header>
+
+    <main class="centered">
+        {% block main %}{% endblock %}
+    </main>
+
+    <!-- <script>
+        function mostrarPopup() {
+            var adminNumber = prompt("Ingrese el número de administrador:");
+            var password = prompt("Ingrese la contraseña:");
+    
+            // Validación de las credenciales
+            if (adminNumber === "0990" && password === "CACcurso2") {
+                // Redireccionar a la página de administración
+                window.location.href = "{% url 'administracion' %}";
+            } else {
+                alert("Credenciales incorrectas. Inténtelo de nuevo.");
+                // Puedes manejar el flujo según necesites, como volver a mostrar el popup o cualquier otra acción.
+            }
+        }
+    
+        document.querySelector('a[href="{% url "administracion" %}"]').addEventListener('click', function(event) {
+            event.preventDefault();
+            mostrarPopup();
+        });
+    </script> -->
+
+    <footer class="centered">
+        <p>Gestor de Ordenes de Reparación 2024 - Todos los derechos reservados</p>
+    </footer>
+</body>
+</html>

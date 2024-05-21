@@ -1,0 +1,10 @@
+{% extends "web/base.html" %}
+{% block titulo %}Administración{% endblock %}
+{% block main %}
+    <h2>Administración</h2>
+    <ul>
+        {% for orden in ordenes %}
+        <li>Número de Orden: {{ orden.numero_orden }}, DNI: {{ orden.dni }}, Estado: {{ orden.estado }}</li>
+        {% endfor %}
+    </ul>
+{% endblock %}
