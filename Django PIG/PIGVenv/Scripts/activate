@@ -38,7 +38,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="C:\Users\agust\OneDrive\Escritorio\Django\Django PIG\PIGVenv"
+VIRTUAL_ENV="C:\Users\agust\OneDrive\Escritorio\Django\Prueba-Django\Django PIG\PIGVenv"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"
