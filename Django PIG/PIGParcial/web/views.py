@@ -64,8 +64,11 @@ def contacto(request):
     if request.method == 'POST':
         form = ContactoForm(request.POST)
         if form.is_valid():
+            print("Datos del formulario de contacto:")
+            print(form.cleaned_data)
+            
             messages.success(request, 'Tu consulta ha sido enviada con éxito')
-            return redirect('contacto')
+            return redirect('index')
     else:
         form = ContactoForm()
     return render(request, 'web/contacto.html', {'form': form})
@@ -109,7 +112,12 @@ def administracion(request):
     contexto = {
         'ordenes': [
             {'numero_orden': '001', 'dni': '12345678', 'estado': 'Finalizado'},
-            {'numero_orden': '002', 'dni': '87654321', 'estado': 'En progreso'}
+            {'numero_orden': '002', 'dni': '87654321', 'estado': 'En progreso'},
+            {'numero_orden': '003', 'dni': '23456789', 'estado': 'Pendiente de entrega'},
+            {'numero_orden': '004', 'dni': '98765432', 'estado': 'Finalizado'},
+            {'numero_orden': '005', 'dni': '34567890', 'estado': 'En progreso'},
+            {'numero_orden': '006', 'dni': '45678901', 'estado': 'Pendiente de entrega'},
+            {'numero_orden': '007', 'dni': '56789012', 'estado': 'Finalizado'}
         ]
     }
     return render(request, 'web/administracion.html', contexto)

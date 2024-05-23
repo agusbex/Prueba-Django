@@ -14,5 +14,7 @@
         <p>Estado: {{ orden.estado }}</p>
         <p>Descripción: {{ orden.descripcion }}</p>
         <p>Fecha de Ingreso: {{ orden.fecha_ingreso }}</p>
+
+        <a href="{% url 'index' %}"><button class="btn">Volver</button></a>
     </div>
 {% endblock %}

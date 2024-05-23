@@ -76,18 +76,6 @@
     margin-bottom: 10px;
 }
 
-.btn-quote {
-    background-color: #ff5733;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 20px;
-    cursor: pointer;
-    margin-top: 20px;
-    text-transform: uppercase; 
-    transition: background-color 0.3s; 
-}
-
-.btn-quote:hover {
-    background-color: #e74c3c;
+a{
+    padding: auto;
 }

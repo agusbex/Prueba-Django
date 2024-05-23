@@ -14,5 +14,7 @@
             <li>Número de Orden: {{ orden.numero_orden }}, DNI: {{ orden.dni }}, Estado: {{ orden.estado }}</li>
             {% endfor %}
         </ul>
+
+        <a href="{% url 'index' %}"><button class="btn">Volver</button></a>
     </div>
 {% endblock %}
