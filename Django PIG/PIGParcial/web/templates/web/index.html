@@ -12,20 +12,88 @@
 
     <div id="contenedor" class="centered">
         <section class="presentacion">
+            <h2>¿Por qué elegirnos?</h2>
             <p>Estamos comprometidos a ofrecerte la mejor experiencia!<br>Garantizamos cada reparación con 100 días de cobertura completa, respaldada por un riguroso proceso de diagnóstico y actualización de antivirus, así como la revisión periódica de backups. Con servicio disponible en todo el país, nuestro equipo de expertos está siempre a tu disposición para asesorarte y brindarte atención, permitiéndote seguir el estado de tu equipo desde la comodidad de tu hogar. Tu confianza es nuestra garantía.</p>
+            <div class="features">
+                <div class="feature">
+                    <img src="{% static 'web/img/icono_digital.png' %}" alt="100% digitales">
+                    <h3>100% digitales</h3>
+                    <p>Cotizá y seguí tu servicio 100% online.</p>
+                </div>
+                <div class="feature">
+                    <img src="{% static 'web/img/icono_cerca.png' %}" alt="Siempre cerca">
+                    <h3>Siempre cerca</h3>
+                    <p>Contamos con cobertura nacional.</p>
+                </div>
+                <div class="feature">
+                    <img src="{% static 'web/img/icono_dispositivos.png' %}" alt="Múltiples dispositivos">
+                    <h3>Múltiples dispositivos</h3>
+                    <p>Cualquier dispositivo tecnológico, de cualquier marca y modelo.</p>
+                </div>
+                <div class="feature">
+                    <img src="{% static 'web/img/icono_repuestos.png' %}" alt="Sólo lo mejor">
+                    <h3>Sólo lo mejor</h3>
+                    <p>Contamos con repuestos homologados y técnicos especializados en cada marca.</p>
+                </div>
+                <div class="feature">
+                    <img src="{% static 'web/img/icono_garantia.png' %}" alt="100 días de garantía">
+                    <h3>100 días de garantía</h3>
+                    <p>Ofrecemos una garantía única de 100 días para tu tranquilidad.</p>
+                </div>
+                <div class="feature">
+                    <img src="{% static 'web/img/icono_certificados.png' %}" alt="Laboratorios Certificados">
+                    <h3>Laboratorios Certificados</h3>
+                    <p>Los servicios son realizados en laboratorios 100% certificados y homologados por las marcas.</p>
+                </div>
+            </div>
+            <button class="btn-quote">Cotizar Ahora</button>
         </section>
+    
         <section class="equipos">
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
+            <h2>Todos los equipos. De todas las marcas.</h2>
+            <div class="device-icons">
+                <img src="{% static 'web/img/icon_smartphone.png' %}" alt="Smartphone">
+                <img src="{% static 'web/img/icon_tablet.png' %}" alt="Tablet">
+                <img src="{% static 'web/img/icon_computadora.png' %}" alt="Computadora">
+                <img src="{% static 'web/img/icon_impresora.png' %}" alt="Impresora">
+                <img src="{% static 'web/img/icon_smartwatch.png' %}" alt="Smartwatch">
+                <img src="{% static 'web/img/icon_consola.png' %}" alt="Consola">
+                <img src="{% static 'web/img/icon_smart.png' %}" alt="Smart TV">
+            </div>
         </section>
-        <section class="funcion"></section>
-        <section class="info_contacto"></section>
+    
+        <section class="funcion">
+            <h2>¿Cómo funciona?</h2>
+            <p>¡Es muy simple! Mirá:</p>
+            <div class="steps">
+                <div class="step">
+                    <img src="{% static 'web/img/step_1.png' %}" alt="Cotiza con un asesor por WhatsApp">
+                    <p>Cotiza con un asesor contactándonos</p>
+                    <p>¡En minutos!</p>
+                </div>
+                <div class="step">
+                    <img src="{% static 'web/img/step_2.png' %}" alt="Elegí el servicio">
+                    <p>Elegí el servicio</p>
+                    <p>¿Preferís llevarlo vos o un retiro a domicilio?</p>
+                </div>
+                <div class="step">
+                    <img src="{% static 'web/img/step_3.png' %}" alt="Seguís el estado de tu servicio">
+                    <p>Seguís el estado de tu servicio</p>
+                    <p>¡Podés ver el estado de tu servicio en tiempo real!</p>
+                </div>
+                <div class="step">
+                    <img src="{% static 'web/img/step_4.png' %}" alt="Pagá online, seguro y en cuotas">
+                    <p>Pagá online, seguro y en cuotas</p>
+                    <p>Pagá 100% Online y en cuotas sin interés.</p>
+                </div>
+                <div class="step">
+                    <img src="{% static 'web/img/step_5.png' %}" alt="Te lo entregamos como nuevo">
+                    <p>Te lo entregamos como nuevo</p>
+                    <p>Una vez listo, entregamos tu equipo ¡Cómo nuevo!</p>
+                </div>
+            </div>
+            <button class="btn-quote">Cotizar Ahora</button>
+        </section>
     </div>
-
-    <!-- <img src="{% static 'web/img/gatito.jpg' %}" alt="La foto de un gatito"> -->
 
 {% endblock %}

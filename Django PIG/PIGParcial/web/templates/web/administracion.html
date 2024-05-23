@@ -1,10 +1,18 @@
 {% extends "web/base.html" %}
+{% load static %}
+
 {% block titulo %}Administración{% endblock %}
+{% block extra_css %}
+    <link rel="stylesheet" href="{% static 'web/styles/administracion.css' %}">
+{% endblock %}
+
 {% block main %}
-    <h2>Administración</h2>
-    <ul>
-        {% for orden in ordenes %}
-        <li>Número de Orden: {{ orden.numero_orden }}, DNI: {{ orden.dni }}, Estado: {{ orden.estado }}</li>
-        {% endfor %}
-    </ul>
+    <div class="contenedor-centrado">
+        <h2>Administración</h2>
+        <ul>
+            {% for orden in ordenes %}
+            <li>Número de Orden: {{ orden.numero_orden }}, DNI: {{ orden.dni }}, Estado: {{ orden.estado }}</li>
+            {% endfor %}
+        </ul>
+    </div>
 {% endblock %}

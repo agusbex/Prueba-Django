@@ -1,10 +1,18 @@
 {% extends "web/base.html" %}
+{% load static %}
+
 {% block titulo %}Detalle de la Orden{% endblock %}
+{% block extra_css %}
+    <link rel="stylesheet" href="{% static 'web/styles/detalle_orden.css' %}">
+{% endblock %}
+
 {% block main %}
-    <h2>Detalle de la Orden</h2>
-    <p>Número de Orden: {{ orden.numero_orden }}</p>
-    <p>DNI: {{ orden.dni }}</p>
-    <p>Estado: {{ orden.estado }}</p>
-    <p>Descripción: {{ orden.descripcion }}</p>
-    <p>Fecha de Ingreso: {{ orden.fecha_ingreso }}</p>
+    <div class="contenedor-centrado">
+        <h2>Detalle de la Orden</h2>
+        <p>Número de Orden: {{ orden.numero_orden }}</p>
+        <p>DNI: {{ orden.dni }}</p>
+        <p>Estado: {{ orden.estado }}</p>
+        <p>Descripción: {{ orden.descripcion }}</p>
+        <p>Fecha de Ingreso: {{ orden.fecha_ingreso }}</p>
+    </div>
 {% endblock %}

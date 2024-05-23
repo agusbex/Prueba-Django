@@ -1,13 +1,21 @@
 {% extends "web/base.html" %}
+{% load static %}
+
 {% block titulo %}Contacto{% endblock %}
+{% block extra_css %}
+    <link rel="stylesheet" href="{% static 'web/styles/contacto.css' %}">
+{% endblock %}
+
 {% block main %}
 
-    <div>
-        <h2>Contacto</h2>
-        <form method="post">
-            {% csrf_token %}
-            {{ form.as_p }}
-            <button type="submit">Enviar</button>
-        </form>
+    <div class="contenedor-centrado">
+        <div class="fondo">
+            <h2>Contacto</h2>
+            <form method="post">
+                {% csrf_token %}
+                {{ form.as_p }}
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
     </div>
 {% endblock %}

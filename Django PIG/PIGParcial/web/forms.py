@@ -39,9 +39,9 @@ class ContactoForm(forms.Form):
     mensaje = forms.CharField(label="Mensaje", widget=forms.Textarea, required=True)
 
 class SeguimientoForm(forms.Form):
-    numero_orden = forms.CharField(label="Número de Orden", max_length=50, required=True)
-    dni = forms.CharField(label="DNI", max_length=10, required=True)
+    numero_orden = forms.IntegerField(label="Número de Orden", required=True)
+    dni = forms.IntegerField(label="DNI", required=True)
 
 class AdminLoginForm(forms.Form):
-    numero_admin = forms.CharField(label="Número de Administrador", max_length=10, required=True)
+    numero_admin = forms.CharField(label="Administrador", max_length=10, required=True)
     contraseña = forms.CharField(label="Contraseña", widget=forms.PasswordInput(), required=True)
